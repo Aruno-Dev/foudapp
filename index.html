@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fou' d'App'</title>
+    <!--Swiper cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!--Font Awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!--Custom css file link-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--Header section start-->
+    <header>
+      <a href="#home" class="logo">
+        <i class="fas fa-utensils"></i>
+        Fou! D' App'
+      </a>
+      <nav class="navbar">
+        <a class="active" href="#home">Accueil</a>
+        <a href="#dishes">Plats</a>
+        <a href="#about">A propos</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Review</a>
+        <a href="#order">Commande</a>
+      </nav>
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div class="dropdown">
+          <button id="dropbtn" class="dropbtn">
+            <i id="theme" class="fas fa-fill-drip"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <button id="theme-original">theme original</button>
+            <button id="theme-purple">Purple theme</button>
+            <button id="theme-reddish">Red theme</button>
+            <button id="theme-blueish">Blue theme</button>
+            <button id="theme-yellow">Yellow theme</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Header section end-->
+
+    <!--Search Form-->
+    <form action="" id="search-form">
+      <input
+        type="search"
+        name=""
+        placeholder="cherchez ici..."
+        id="search-box"
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <!---->
+    <!--Home Section starts-->
+    <section class="home" id="home">
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Nos plats spéciaux</span>
+              <h3>Pasta mama style</h3>
+              <p>Parce que la pasta chez nous c'est une histoire de famille !</p>
+              <a href="#" class="btn">commander</a>
+            </div>
+            <div class="image">
+              <img src="./assets/images/pasta3.png" alt="La Pasta mama stryle" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Nos plats spéciaux</span>
+              <h3>Notre délicieux poulet fermier</h3>
+              <p>Une peau croustillante, une viande tendre et parfumée, élevé en plein air chez nos partenaires locaux.</p>
+              <a href="#" class="btn">commander</a>
+            </div>
+            <div class="image">
+              <img src="./assets/images/chicken.png" alt="Le poulet fermier" />
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Nos plats spéciaux</span>
+              <h3>La savoureuse pizza Napoli</h3>
+              <p>Des ingrédients de premier choix, une pâte secrète et une cuisson au four qui la rende exceptionnelle!</p>
+              <a href="#" class="btn">commander</a>
+            </div>
+            <div class="image">
+              <img src="./assets/images/home-img-3.png" alt="La pizza Napoli" />
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </section>
+    <!--Home Section ends-->
+    <!--Dishes Section starts-->
+    <section class="dishes" id="dishes">
+      <h3 class="sub-heading">Nos plats</h3>
+      <h1 class="heading">Plats Populaires</h1>
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/images/dish-1.png" alt="dishes img" />
+          <h3>Le Miaaaam Burger</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>12.99 euros</span>
+          <a href="#" class="btn">ajouter au panier</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/images/dish-2.png" alt="dishes img" />
+          <h3>Nuggets "doigts collants" de poulet</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>14.50 euros</span>
+          <a href="#" class="btn">ajouter au panier</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/images/dish-3.png" alt="dishes img" />
+          <h3>L'absolu poulet fermier</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>17.00 euros</span>
+          <a href="#" class="btn">ajouter au panier</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/images/dish-4.png" alt="dishes img" />
+          <h3>La Peppa Pizza</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>8.99 euros</span>
+          <a href="#" class="btn">ajouter au panier</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/images/dish-5.png" alt="dishes img" />
+          <h3>le Crunchy Chocky Delight</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>4.99 euros</span>
+          <a href="#" class="btn">ajouter au panier</a>
+        </div>
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/images/dish-6.png" alt="dishes img" />
+          <h3>Nos wings en friture croustillante</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>15.99 euros</span>
+          <a href="#" class="btn">ajouter au panier</a>
+        </div>
+      </div>
+    </section>
+    <!--Dishes Section ends-->
+    <!--About Section starts-->
+    <section class="about" id="about">
+      <h3 class="sub-heading">A propos de nous</h3>
+      <h1 class="heading">Pourquoi commander chez nous ?</h1>
+      <div class="row">
+        <div class="image">
+          <img src="./assets/images/about-img.png" alt="about img" />
+        </div>
+        <div class="content">
+          <h3>Des recettes originales et authentiques</h3>
+          <p>
+            Notre préoccupation première c'est la fraicheur et l'origine de nos produits de base. C'est pourquoi nous avons absolument tenu à démarcher les producteurs locaux autours de nos restaurants partout en FRance afin de garantir: 
+            - la qualité des produits.
+            - l'origine des produits.
+            - 
+          </p>
+          <p>
+            Tout le bla bla comme quoi c'est bio local equitable eco-friendly
+            Tout le bla bla comme quoi c'est bio local equitable eco-friendly
+            Tout le bla bla comme quoi c'est bio local equitable eco-friendly
+            etc ...
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fas fa-shipping-fast"></i>
+              <span>livraison gratuite</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-dollar-sign"></i>
+              <span>paiement facile</span>
+            </div>
+            <div class="icons">
+              <i class="fas fa-headset"></i>
+              <span>service 24h/24 7j/7</span>
+            </div>
+          </div>
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+    <!--About Section ends-->
+    <!--Menu Section starts-->
+    <section class="menu" id="menu">
+      <h3 class="sub-heading">Notre Menu</h3>
+      <h1 class="heading">Spécialité du jour</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-1.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>la pepperoni pizza</h3>
+            <p>
+              une pâte fine, une garniture riche et savoureuse !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">9.99 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-2.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>le burger du chef</h3>
+            <p>
+              180gr de boeuf fraichement haché, du cheddar fondant, de croquantes crudités et la sauce unique font de ce burger un vrai délice !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">12.99 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-3.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>les crêpes caramel beurre salé</h3>
+            <p>
+              un incontournable dessert gourmand à partager...ou pas !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">8.45 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-4.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>la gauffre choco - chantilly</h3>
+            <p>
+              croustillante et moelleuse à la fois...un classique !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">5.50 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-5.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>le choco-cookie nappé de beurre de cacahuète et fruits frais de saison</h3>
+            <p>
+              notre délicieuse nouveauté qui se passe de commentaire !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">10.00 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-6.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>les mini-babas au rhum</h3>
+            <p>
+              pour les amateurs de sensations fortes !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">7.75 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-7.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>ice tea maison</h3>
+            <p>
+              Nous concoctons pour vous des ice tea originaux infusés aux fruits frais de saison
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">4.50 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-8.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>l'energy bowl</h3>
+            <p>
+              Une sélection de céréales, fruits secs et fruits frais locaux et de saison. Un régal !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">4.45 euros</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./assets/images/menu-9.jpg" alt="" />
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Fruits frais pressés sur place et à la demande</h3>
+            <p>
+              Le meilleur moyen de démarrer du bon pied !
+            </p>
+            <a href="#" class="btn">Ajouter au panier</a>
+            <span class="price">3.45 euros</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Menu Section ends-->
+    <!--Review Section starts-->
+    <section class="review" id="review">
+      <h3 class="sub-heading">Nos Clients</h3>
+      <h1 class="heading">Ce qu'ils disent de nous</h1>
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/images/pic-5.jpg" alt="" />
+              <div class="user-info">
+                <h3>panda joe</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              A la base je mange des pousses de bamboo à longueur de
+              journée...franchement ça change ! Et en bien ! Parole de panda.
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/images/pic-6.jpg" alt="" />
+              <div class="user-info">
+                <h3>cathy tea</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Pour celles et ceux que la patée écoeure je recommande vivement
+              d'essayer fou'd'app ! Tous leurs produits sont frais, de saisons
+              et forcément bio ! C'était trop bon !
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/images/pic-7.png" alt="" />
+              <div class="user-info">
+                <h3>von duckus</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              J'ai mené l'enquete, rien à dire...cuisine impeccable, service
+              irréprochable, première fraicheur de leurs produits ! Pas un couac
+              !
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/images/pic-8.jpg" alt="" />
+              <div class="user-info">
+                <h3>mr fantastic fox</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Madame Fantastic et les petits ont adoré ! Et franchement pour moi
+              c'est clairement moins difficile que d'aller chaparder des poules
+              chez le fermier d'à cöté ! Ne dites rien à Madame Fantastic.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Review Section ends-->
+    <!--Order Section starts-->
+    <section class="order" id="order">
+      <h3 class="sub-heading">Commandez maintenant</h3>
+      <h1 class="heading">Gratuit et rapide</h1>
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>
+              Votre nom
+              <i class="far fa-address-card"></i>
+            </span>
+            <input type="text" placeholder="entrez votre nom" />
+          </div>
+          <div class="input">
+            <span>
+              Votre téléphone
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+            <input
+              type="number"
+              placeholder="entrez votre numéro de téléphone"
+            />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>
+              Votre commande
+              <i class="fas fa-utensils"></i>
+            </span>
+            <input type="text" placeholder="entrez votre produit" />
+          </div>
+          <div class="input">
+            <span>
+              un supplément ?
+              <i class="far fa-plus-square"></i>
+            </span>
+            <input type="text" placeholder="votre supplément" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>
+              Quantité
+              <i class="fas fa-sort-numeric-up-alt"></i>
+            </span>
+            <input type="number" placeholder="quantité" />
+          </div>
+          <div class="input">
+            <span>
+              Date et heure
+              <i class="far fa-calendar"></i>
+            </span>
+            <input type="datetime-local" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>
+              Votre adresse
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <textarea
+              name=""
+              placeholder="entrez votre adresse"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="input">
+            <span>
+              Votre message
+              <i class="far fa-comment-dots"></i>
+            </span>
+            <textarea
+              name=""
+              placeholder="entrez votre message"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <input type="submit" value="commandez maintenant" class="btn" />
+      </form>
+    </section>
+    <!--Order Section ends-->
+    <!--Footer Section starts-->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Nos Restaurants</h3>
+          <a href="#">Paris 20ème</a>
+          <a href="#">Lyon 7ème</a>
+          <a href="#">Grenoble</a>
+          <a href="#">Bordeaux</a>
+          <a href="#">Marseille</a>
+        </div>
+        <div class="box">
+          <h3>Liens</h3>
+          <a href="#home">Accueil</a>
+          <a href="#dishes">Plats</a>
+          <a href="#about">A propos</a>
+          <a href="#menu">Menu</a>
+          <a href="#review">Review</a>
+          <a href="#order">Commande</a>
+        </div>
+        <div class="box">
+          <h3>Nous contacter</h3>
+          <a href="#">
+            <i class="fas fa-mobile-alt"></i>
+            04.78.70.32.55
+          </a>
+          <a href="#">
+            <i class="fas fa-mobile-alt"></i>
+            01.58.62.23.47
+          </a>
+          <a href="#">
+            <i class="far fa-envelope-open"></i>
+            service.client@foudapp.fr
+          </a>
+          <a href="#">
+            <i class="far fa-envelope-open"></i>
+            service-rh@foudapp.fr
+          </a>
+          <a href="#">Paris, France - 75020</a>
+        </div>
+        <div class="box">
+          <h3>Suivez-nous sur</h3>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+            Facebook
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter-square"></i>
+            Twitter
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+            Linkedin
+          </a>
+        </div>
+      </div>
+      <div class="credit">
+        Tous droits réservés @ 2021 par
+        <span>Arnaud TERRET</span>
+      </div>
+    </section>
+    <!--Footer Section ends-->
+    <!-- loader part-->
+    <div class="loader-container"><img src="./assets/images/loader.gif" alt=""></div>
+    <!--Swiper js file link-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--Custom js file link-->
+    <script src="./assets/js/script.js"></script>
+    <script></script>
+  </body>
+</html>
